@@ -5,7 +5,13 @@ import cors from 'cors';
 
 const app = express();
 dotenv.config();
-app.use(cors());
+app.use(cors(
+     {
+  origin : 'https://instgram-rho.vercel.app/',
+  methods : ['GET','POST','PUT','DELETE','PATCH'],
+  credential : true
+ }
+));
 
 mongoose.set('strictQuery',false);
 mongoose.set('strictQuery',true);
