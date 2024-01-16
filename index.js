@@ -13,6 +13,8 @@ app.use(cors(
  }
 ));
 
+app.options('*', cors());
+
 mongoose.set('strictQuery',false);
 mongoose.set('strictQuery',true);
 
