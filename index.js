@@ -7,13 +7,13 @@ const app = express();
 dotenv.config();
 app.use(cors(
      {
-  origin : ['https://instgram-delta.vercel.app'],
+  origin : ['https://instgram-delta.vercel.app/'],
   methods : ['GET','POST','PUT','DELETE','PATCH'],
   credential : true
  }
 ));
 
-app.options('*', cors());
+
 
 mongoose.set('strictQuery',false);
 mongoose.set('strictQuery',true);
