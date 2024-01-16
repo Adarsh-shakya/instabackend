@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 app.use(cors(
      {
-  origin : 'https://instgram-rho.vercel.app',
+  origin : '',
   methods : ['GET','POST','PUT','DELETE','PATCH'],
   credential : true
  }
