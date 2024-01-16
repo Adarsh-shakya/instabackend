@@ -27,7 +27,7 @@ app.use(express.urlencoded({limit:"30mb",extended:true}))
 app.use('/user', userRouter);
 
 app.get('/', (req, res) => {
-    res.send("This is an open book library API");
+    res.json("This is API");
 });
 
 const PORT = process.env.PORT || 5000;
