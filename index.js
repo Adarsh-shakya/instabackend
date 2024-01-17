@@ -37,7 +37,7 @@ import userRouter from './router/users.js';
 app.use(express.json({limit:"30mb",extended:true}))
 app.use(express.urlencoded({limit:"30mb",extended:true}))
 
-app.use('user', userRouter);
+app.use('/user', userRouter);
 
 app.get('/', (req, res) => {
     res.json("This is API");
