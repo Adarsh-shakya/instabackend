@@ -22,7 +22,7 @@ app.use(cors(
      {
   origin : ['https://instgram-delta.vercel.app'],
   methods :[ 'POST'],
-  credential : true
+  credentials : true
  }
 ));
 
