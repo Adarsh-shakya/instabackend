@@ -8,7 +8,7 @@ dotenv.config();
 app.use(cors(
      {
   origin : 'https://instgram-delta.vercel.app/',
-  methods : ['GET','POST','PUT','DELETE','PATCH'],
+  methods : 'POST',
   credential : true
  }
 ));
