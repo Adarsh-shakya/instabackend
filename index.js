@@ -20,8 +20,8 @@ app.use((req, res, next) => {
 
 app.use(cors(
      {
-  origin : 'https://instgram-delta.vercel.app',
-  methods : 'POST',
+  origin : ['https://instgram-delta.vercel.app'],
+  methods :[ 'POST'],
   credential : true
  }
 ));
