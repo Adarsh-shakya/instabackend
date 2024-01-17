@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 app.use(cors(
      {
-  origin : 'https://instgram-delta.vercel.app/',
+  origin : 'https://instgram-delta.vercel.app',
   methods : 'POST',
   credential : true
  }
